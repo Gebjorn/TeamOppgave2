@@ -1,0 +1,17 @@
+.rutenett {
+    display: grid;
+    width: 597px;
+    height: 597px;
+    background-color: coral;
+    outline: 1px solid black;
+    grid: 1fr 1fr 1fr/
+          1fr 1fr 1fr;
+     
+}
+
+.rute {
+    width: 199px;
+    height: 199px;
+    background-color: cornflowerblue;
+    outline: 5px solid black;
+}
