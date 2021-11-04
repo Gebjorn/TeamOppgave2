@@ -43,20 +43,24 @@ function randomize() {
 function clicked(element) {
 	if (buffer == null) {
 		buffer = element;
+		buffer.style.filter = "hue-rotate(30deg)";
+		buffer.style.width = "199px"
+		buffer.style.height = "199px"
 	}
 	else {
 		swapElements(buffer, element);
+		buffer.style.filter = "hue-rotate(0deg)";
 		buffer = null;
 
-		if (ferdig1.innerHTML == '<img src="img/Smiley1.png" alt="1">' &&
-			ferdig2.innerHTML == '<img src="img/Smiley2.png" alt="2">' &&
-			ferdig3.innerHTML == '<img src="img/Smiley3.png" alt="3">' &&
-			ferdig4.innerHTML == '<img src="img/Smiley4.png" alt="4">' &&
-			ferdig5.innerHTML == '<img src="img/Smiley5.png" alt="5">' &&
-			ferdig6.innerHTML == '<img src="img/Smiley6.png" alt="6">' &&
-			ferdig7.innerHTML == '<img src="img/Smiley7.png" alt="7">' &&
-			ferdig8.innerHTML == '<img src="img/Smiley8.png" alt="8">' &&
-			ferdig9.innerHTML == '<img src="img/Smiley9.png" alt="9">') {
+		if (ferdig1.innerHTML == '<img src="img/1.png" alt="1">' &&
+			ferdig2.innerHTML == '<img src="img/2.png" alt="2">' &&
+			ferdig3.innerHTML == '<img src="img/3 m face.png" alt="3">' &&
+			ferdig4.innerHTML == '<img src="img/4.png" alt="4">' &&
+			ferdig5.innerHTML == '<img src="img/5.png" alt="5">' &&
+			ferdig6.innerHTML == '<img src="img/6.png" alt="6">' &&
+			ferdig7.innerHTML == '<img src="img/7.png" alt="7">' &&
+			ferdig8.innerHTML == '<img src="img/8.png" alt="8">' &&
+			ferdig9.innerHTML == '<img src="img/9.png" alt="9">') {
 
 			ferdig1.style.outline = "none";
 			ferdig2.style.outline = "none";
@@ -67,6 +71,8 @@ function clicked(element) {
 			ferdig7.style.outline = "none";
 			ferdig8.style.outline = "none";
 			ferdig9.style.outline = "none";
+
+			document.getElementById("inputRutenett").style.visibility = "hidden";
 		}
 	}
 }
