@@ -41,27 +41,32 @@ function randomize() {
 }
 
 function clicked(element) {
+	if (buffer == null) {
+		buffer = element;
+	}
+	else {
+		swapElements(buffer, element);
+		buffer = null;
 
-    buffer = element;
+		if (ferdig1.innerHTML == '<img src="img/Smiley1.png" alt="1">' &&
+			ferdig2.innerHTML == '<img src="img/Smiley2.png" alt="2">' &&
+			ferdig3.innerHTML == '<img src="img/Smiley3.png" alt="3">' &&
+			ferdig4.innerHTML == '<img src="img/Smiley4.png" alt="4">' &&
+			ferdig5.innerHTML == '<img src="img/Smiley5.png" alt="5">' &&
+			ferdig6.innerHTML == '<img src="img/Smiley6.png" alt="6">' &&
+			ferdig7.innerHTML == '<img src="img/Smiley7.png" alt="7">' &&
+			ferdig8.innerHTML == '<img src="img/Smiley8.png" alt="8">' &&
+			ferdig9.innerHTML == '<img src="img/Smiley9.png" alt="9">') {
 
-	if (rute1.innerHTML == '<img src="img/Smiley1.png" alt="1">' &&
-		rute2.innerHTML == '<img src="img/Smiley2.png" alt="2">' &&
-		rute3.innerHTML == '<img src="img/Smiley3.png" alt="3">' &&
-		rute4.innerHTML == '<img src="img/Smiley4.png" alt="4">' &&
-		rute5.innerHTML == '<img src="img/Smiley5.png" alt="5">' &&
-		rute6.innerHTML == '<img src="img/Smiley6.png" alt="6">' &&
-		rute7.innerHTML == '<img src="img/Smiley7.png" alt="7">' &&
-		rute8.innerHTML == '<img src="img/Smiley8.png" alt="8">') {
-		rute9.innerHTML = '<img src="img/Smiley9.png" alt="9">';
-		ferdig1.style.outline = "none";
-		ferdig2.style.outline = "none";
-		ferdig3.style.outline = "none";
-		ferdig4.style.outline = "none";
-		ferdig5.style.outline = "none";
-		ferdig6.style.outline = "none";
-		ferdig7.style.outline = "none";
-		ferdig8.style.outline = "none";
-		ferdig9.style.outline = "none";
-
+			ferdig1.style.outline = "none";
+			ferdig2.style.outline = "none";
+			ferdig3.style.outline = "none";
+			ferdig4.style.outline = "none";
+			ferdig5.style.outline = "none";
+			ferdig6.style.outline = "none";
+			ferdig7.style.outline = "none";
+			ferdig8.style.outline = "none";
+			ferdig9.style.outline = "none";
+		}
 	}
 }
